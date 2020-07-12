@@ -1,9 +1,11 @@
 # OPEN-OHC
 Ocean Projection and Extension neural Network (OPEN) by Dr. W Lu, Fuzhou University (luwf@fzu.edu.cn). Major contributers of this study include:
 
-Dr Xiao-Hai Yan, University of Delaware
+
 
 Mr Haojie Zhang, Gratudate student in Fuzhou University
+
+Dr Xiao-Hai Yan, University of Delaware
 
 Dr Hua Su, Fuzhou University
 
