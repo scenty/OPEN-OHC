@@ -3,7 +3,7 @@ Ocean Projection and Extension neural Network (OPEN) by Dr. W Lu, Fuzhou Univers
 
 
 
-Mr Haojie Zhang, Gratudate student in Fuzhou University
+Mr Haojie Zhang, Gratudate student in Fuzhou University (https://github.com/fzu-zhj)
 
 Dr Xiao-Hai Yan, University of Delaware
 
