@@ -19,6 +19,6 @@ The work was submitted to Remote Sensing (Su et al, 2020, accepted).
 The code along with OPEN-OHC data will be public available on this git page SOOOOOON after publication of the paper.
 Links to the data will also be provided on this page.
 
-## Directory Organization
-# data: Argo data that structured
-# 
+# Directory Organization
+## data: Argo data that structured
+## 
