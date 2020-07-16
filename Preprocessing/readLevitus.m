@@ -2,7 +2,7 @@
 clear all;
 idepth=700;
 cp=3850;rho=1025;
-fdir='D:\02-Data\Levitus\';
+fdir='Levitus\';
 files=dir([fdir,'*.nc']);
 fname=[fdir,files(1).name] ;   
 lon=double(ncread(fname,'lon'));lat=double(ncread(fname,'lat'));
@@ -40,7 +40,6 @@ iz=permute(repmat(iz,[1 length(lon) length(lat)]),[2 3 1]);
 end
 
 %calculate and save area matrix
-%v1=load('D:\OneDrive\00-ZhangHJ-OHC-paper\重建数据\global\OHC300.mat','lon','lat');
 Rearth=6371;
 [xx,yy]=meshgrid(lon,lat);xx=xx';yy=yy';
 dy=distance(yy(1:end-1,:),xx(1:end-1,:),yy(2:end,:),xx(2:end,:));dy=dy/180*pi*Rearth*1000;

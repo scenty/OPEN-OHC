@@ -179,7 +179,7 @@ for iy=2005:2018
         
         %%
         %save data
-        path_in_save =['E:\Data\',dddd,'\']; 
+        path_in_save =['..\Data\',dddd,'\']; 
         save([path_in_save,'ar_',yyyy,mm],'sst','ssw','ohc','lat','lon','var_lon_notnan','var_lat_notnan','time','uw','vw','dh');
         %%
         %Clear the data to avoid affecting the next calculation

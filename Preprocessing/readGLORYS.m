@@ -2,7 +2,7 @@
 clear all;
 idepth=2000;
 cp=3850;rho=1025;
-fdir='D:\02-Data\global-reanalysis-phy-001-025-monthly\all\';
+fdir='GLORYS\';
 files=dir([fdir,'*.nc']);
 fname=[fdir,files(1).name] ;
 lon=ncread(fname,'longitude');lat=ncread(fname,'latitude');
@@ -39,7 +39,6 @@ for ii=1:length(files)
     time(ii)=datenum(yyyy,mm,1);
 end
 %calculate and save area matrix
-%v1=load('D:\OneDrive\00-ZhangHJ-OHC-paper\重建数据\global\OHC300.mat','lon','lat');
 Rearth=6371;
 [xx,yy]=meshgrid(lon,lat);xx=xx';yy=yy';
 dy=distance(yy(1:end-1,:),xx(1:end-1,:),yy(2:end,:),xx(2:end,:));dy=dy/180*pi*Rearth*1000;
@@ -48,7 +47,7 @@ dx(:,end+1)=dx(:,end);dy(end+1,:)=dy(end,:);
 area = dx.*dy;
 %%%%
 
-output_name=['ARMOROHC',num2str(idepth),'.mat']
+output_name=['GLORYSOHC',num2str(idepth),'.mat']
 ohc_name=['ohc',num2str(idepth)]
 eval([ohc_name,'=ohc_all;'])
 eval(['save(output_name,''lon'',''area'',''lat'',''time'',''',ohc_name,''',''-v7.3'')'])

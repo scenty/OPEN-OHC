@@ -1,7 +1,7 @@
 close all;clear all;
 idepth=300;
 cp=3850;rho=1025;
-fdir='G:\EN4\';
+fdir='G:\EN4\'; % this is EN4 directory
 files=dir([fdir,'EN*.nc']);
 fname=[fdir,files(1).name] ;
 
@@ -34,7 +34,7 @@ for ii=1:length(files)
     time(ii)=datenum(yyyy,mm,1);
 end
 %calculate and save area matrix
-v1=load('D:\OneDrive\00-ZhangHJ-OHC-paper\重建数据\global\OHC300.mat','lon','lat');
+v1=load('OHC300.mat','lon','lat');
 Rearth=6371;
 xx=v1.lon;yy=v1.lat;
 dy=distance(yy(1:end-1,:),xx(1:end-1,:),yy(2:end,:),xx(2:end,:));dy=dy/180*pi*Rearth*1000;

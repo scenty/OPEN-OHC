@@ -10,9 +10,9 @@ inx=0;
 mrmse=[];
 y=1993:2018;
 y=zscore(y);
-path='E:\Data\';
+path='Data\';
 load([path,'net.mat']);
-filepath='E:\Data\'
+filepath='Data\'
 for iy=1993:2018;
         yyyy=num2str(iy);
        la=[];lo=[];ss=[];st=[];sw=[];vw=[];uw=[];
@@ -49,7 +49,7 @@ for iy=1993:2018;
         rmse=gof.rmse
         rrmse=rmse/ohc_std
         open=y_predict;iap=ohc_t;
-        path_in_save =['E:\Data\']; 
+        path_in_save =['Data\']; 
         save([path_in_save,'open_',yyyy,mm],'open','var_lat','var_lon','iap');
 end
 
