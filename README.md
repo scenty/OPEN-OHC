@@ -16,8 +16,10 @@ Dr Xupu Geng, Xiamen University
 The code is for pre-processing, training, testing, and visualization of Ocean Projection and Extension neural Network (OPEN) Ocean Heat Content (OHC) dataset.
 The work was submitted to Remote Sensing (Su et al, 2020, accepted).
 
-The code along with OPEN-OHC data will be public available on this git page SOOOOOON after publication of the paper.
-Links to the data will also be provided on this page.
+# Data Links
+Two links to our data are provided:
+Google Drive: 
+Baidu  Cloud: 
 
 # Directory Organization
 ## data: Argo data that structured
