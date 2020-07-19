@@ -2,8 +2,10 @@
 Ocean Projection and Extension neural Network (OPEN) by Dr. Wenfang Lu, Fuzhou University (:e-mail:luwf@fzu.edu.cn), and colleagues.
 
 # Introduction
-The code is for pre-processing, training, testing, and visualization of Ocean Projection and Extension neural Network (OPEN) Ocean Heat Content (OHC) dataset.
+The code is for pre-processing, training, testing, and visualization of OPEN-OHC dataset.
 The work was published in Remote Sensing (:book:[Su et al, 2020, RS](https://www.researchgate.net/publication/343019246_OPEN_A_New_Estimation_of_Global_Ocean_Heat_Content_for_Upper_2000_Meters_from_Remote_Sensing_Data)).
+
+With a neural network method, the OPEN estimates OHC anomalies over four different depths down to 2000 m covering the near-global ocean, excluding the polar regions, from remote sensing-based products (SSH,SST,and Winds). 
 
 # Data Links
 - Two links to our data are provided:
