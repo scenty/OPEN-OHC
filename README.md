@@ -1,5 +1,5 @@
 # OPEN-OHC
-Ocean Projection and Extension neural Network (OPEN) by Dr. W Lu, Fuzhou University (luwf@fzu.edu.cn).
+Ocean Projection and Extension neural Network (OPEN) by Dr. Wenfang Lu, Fuzhou University (luwf@fzu.edu.cn), and colleagues.
 
 # Introduction
 The code is for pre-processing, training, testing, and visualization of Ocean Projection and Extension neural Network (OPEN) Ocean Heat Content (OHC) dataset.
