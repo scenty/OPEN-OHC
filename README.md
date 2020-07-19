@@ -1,5 +1,5 @@
-# OPEN-OHC
-Ocean Projection and Extension neural Network (OPEN) by Dr. Wenfang Lu, Fuzhou University (luwf@fzu.edu.cn), and colleagues.
+# :ocean: OPEN-OHC :satellite:
+Ocean Projection and Extension neural Network (OPEN) by Dr. Wenfang Lu, Fuzhou University (:e-mail:luwf@fzu.edu.cn), and colleagues.
 
 # Introduction
 The code is for pre-processing, training, testing, and visualization of Ocean Projection and Extension neural Network (OPEN) Ocean Heat Content (OHC) dataset.
@@ -14,7 +14,7 @@ The work was published in Remote Sensing ([Su et al, 2020, RS](https://www.resea
 - If **either data downloaded**, please fill in your information (in 10 seconds!) in one of the following links. These help in scientific communication and improvement of our data.
 
 [Google Doc](https://docs.google.com/spreadsheets/d/10d6_ARcdD8zE8cZLTta9E9--S7q9j6yVKq6dccd87yU/edit#gid=0) | 
-[Tencent Doc](https://docs.qq.com/sheet/DR01PZlV3ZENVWlVh) | if facing any difficulty, please contact W.L. at luwf@fzu.edu.cn
+[Tencent Doc](https://docs.qq.com/sheet/DR01PZlV3ZENVWlVh) | if facing any difficulty, please contact W.L. |
 
 
 # Directory Organization
