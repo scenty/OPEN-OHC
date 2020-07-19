@@ -1,17 +1,6 @@
 # OPEN-OHC
-Ocean Projection and Extension neural Network (OPEN) by Dr. W Lu, Fuzhou University (luwf@fzu.edu.cn). Major contributers of this study include:
+Ocean Projection and Extension neural Network (OPEN) by Dr. W Lu, Fuzhou University (luwf@fzu.edu.cn).
 
-
-
-Mr Haojie Zhang, Gratudate student in Fuzhou University (https://github.com/fzu-zhj)
-
-Dr Xiao-Hai Yan, University of Delaware
-
-Dr Hua Su, Fuzhou University
-
-Ms Tian Qin, Gratudate student in Fuzhou University
-
-Dr Xupu Geng, Xiamen University
 # Introduction
 The code is for pre-processing, training, testing, and visualization of Ocean Projection and Extension neural Network (OPEN) Ocean Heat Content (OHC) dataset.
 The work was published in Remote Sensing ([Su et al, 2020, RS](https://www.researchgate.net/publication/343019246_OPEN_A_New_Estimation_of_Global_Ocean_Heat_Content_for_Upper_2000_Meters_from_Remote_Sensing_Data)).
@@ -36,3 +25,17 @@ The work was published in Remote Sensing ([Su et al, 2020, RS](https://www.resea
 - Data: Argo data that structured
 - Visualization
 
+# Acknowledge
+
+Major contributers of this study are:
+
+
+Mr Haojie Zhang, Gratudate student in Fuzhou University (https://github.com/fzu-zhj)
+
+Dr Xiao-Hai Yan, University of Delaware
+
+Dr Hua Su, Fuzhou University
+
+Ms Tian Qin, Gratudate student in Fuzhou University
+
+Dr Xupu Geng, Xiamen University
