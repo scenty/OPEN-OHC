@@ -24,9 +24,8 @@ Two links to our data are provided:
 [Baidu  Cloud] https://pan.baidu.com/s/1JeaByifJi_939TFOISDovQ with extraction code o4qy
 
 If either data downloaded, please fill in your information (10 seconds only!) in one of the following links: 
-[Google Doc] https://docs.google.com/spreadsheets/d/10d6_ARcdD8zE8cZLTta9E9--S7q9j6yVKq6dccd87yU/edit#gid=0
 
-or
+[Google Doc] https://docs.google.com/spreadsheets/d/10d6_ARcdD8zE8cZLTta9E9--S7q9j6yVKq6dccd87yU/edit#gid=0
 
 [Tencent Doc] https://docs.qq.com/sheet/DR01PZlV3ZENVWlVh
 
