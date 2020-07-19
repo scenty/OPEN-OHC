@@ -32,9 +32,9 @@ Major contributers of this study are:
 
 Mr Haojie Zhang, Gratudate student in Fuzhou University (https://github.com/fzu-zhj)
 
-Dr Xiao-Hai Yan, University of Delaware (xiaohai@udel.edu)
-
 Dr Hua Su, Fuzhou University (suhua@fzu.edu.cn)
+
+Dr Xiao-Hai Yan, University of Delaware (xiaohai@udel.edu)
 
 Ms Tian Qin, Gratudate student in Fuzhou University
 
