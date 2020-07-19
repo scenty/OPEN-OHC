@@ -14,7 +14,7 @@ Ms Tian Qin, Gratudate student in Fuzhou University
 Dr Xupu Geng, Xiamen University
 # Introduction
 The code is for pre-processing, training, testing, and visualization of Ocean Projection and Extension neural Network (OPEN) Ocean Heat Content (OHC) dataset.
-The work was submitted to Remote Sensing ([Su et al, 2020, RS](https://www.researchgate.net/publication/343019246_OPEN_A_New_Estimation_of_Global_Ocean_Heat_Content_for_Upper_2000_Meters_from_Remote_Sensing_Data)).
+The work was published in Remote Sensing ([Su et al, 2020, RS](https://www.researchgate.net/publication/343019246_OPEN_A_New_Estimation_of_Global_Ocean_Heat_Content_for_Upper_2000_Meters_from_Remote_Sensing_Data)).
 
 # Data Links
 - Two links to our data are provided:
