@@ -23,7 +23,7 @@ Two links to our data are provided:
 
 [Baidu  Cloud] https://pan.baidu.com/s/1JeaByifJi_939TFOISDovQ with extraction code o4qy
 
-If *either data downloaded*, please fill in your information (in 10 seconds!) in one of the following links: 
+If **either data downloaded**, please fill in your information (in 10 seconds!) in one of the following links. These help in scientific communication and improvement of our data.
 
 [Google Doc] https://docs.google.com/spreadsheets/d/10d6_ARcdD8zE8cZLTta9E9--S7q9j6yVKq6dccd87yU/edit#gid=0
 
