@@ -1,4 +1,4 @@
-%×öÉ¢µã
+%
 t=1993:1/12:2019;
 t=t(1:end-1);
 int10=std(SegTrend(t,ohc_int,120)); %60 months = 5 years

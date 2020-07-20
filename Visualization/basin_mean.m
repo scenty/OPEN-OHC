@@ -1,8 +1,4 @@
-%研究区域海洋的变化趋势。
-%AT表示大西洋 PA表示太平洋 IN表示印度洋 SO表示南大洋 t表示IAP数据 P表示预测数据
-%%
-%大西洋
-load('D:\OneDrive\00-ZhangHJ-OHC-paper\重建数据\global\OHC300.mat')
+load('OHC300.mat')
 load ocean_basin
 time=datenum(1993,1:312,15);
 o=zeros(360,180);
@@ -30,40 +26,37 @@ for i=1:312;
     so_ar(i,:)=argo(ocean_basin==10);
 end 
 %%
-%印度洋
-   ohc_int=nansum(in_t,2)-nanmean(nansum(in_t(145:312,:),2),1);
+
+   tmp = nansum(in_t,2);
+   ohc_int=movmean(tmp-nanmean(tmp),12);
    ohc_int=movmean(ohc_int,12);
    ohc_inp=nansum(in_p,2)-nanmean(nansum(in_p(145:312,:),2),1);
    ohc_inp=movmean(ohc_inp,12);
-   ohc_ina=nansum(in_ar,2);ohc_ina(ohc_ina==0)=nan;
-  ohc_ina=ohc_ina -nanmean(nansum(in_ar(145:312,:),2),1);
+   ohc_ina=nansum(in_ar,2)-nanmean(nansum(in_ar(145:312,:),2),1);
    ohc_ina=movmean(ohc_ina,12);
    %%
-%大西洋洋
+
    ohc_att=nansum(at_t,2)-nanmean(nansum(at_t(145:312,:),2),1);
    ohc_att=movmean(ohc_att,12);
    ohc_atp=nansum(at_p,2)-nanmean(nansum(at_p(145:312,:),2),1);
    ohc_atp=movmean(ohc_atp,12);
-   ohc_ata=nansum(at_ar,2);ohc_ata(ohc_ata==0)=nan;
-  ohc_ata=ohc_ata -nanmean(nansum(at_ar(145:312,:),2),1);
+   ohc_ata=nansum(at_ar,2)-nanmean(nansum(at_ar,2));
    ohc_ata=movmean(ohc_ata,12);
    %%
-%太平洋
+
    ohc_pat=nansum(pa_t,2)-nanmean(nansum(pa_t(145:312,:),2),1);
    ohc_pat=movmean(ohc_pat,12);
    ohc_pap=nansum(pa_p,2)-nanmean(nansum(pa_p(145:312,:),2),1);
    ohc_pap=movmean(ohc_pap,12);
-   ohc_paa=nansum(pa_ar,2);ohc_paa(ohc_paa==0)=nan;
-  ohc_paa=ohc_paa -nanmean(nansum(pa_ar(145:312,:),2),1);
+   ohc_paa=nansum(pa_ar,2)-nanmean(pa_ar(:));
    ohc_paa=movmean(ohc_paa,12);
    %%
-%南大洋
-  ohc_sot=nansum(so_t,2)-nanmean(nansum(so_t(145:312,:),2),1);
+
+   ohc_sot=nanmean(so_t,2)-nanmean(nansum(so_t(145:312,:),2),1);
    ohc_sot=movmean(ohc_sot,12);
-   ohc_sop=nansum(so_p,2)-nanmean(nansum(so_p(145:312,:),2),1);
+   ohc_sop=nanmean(so_p,2)-nanmean(nansum(so_p(145:312,:),2),1);
    ohc_sop=movmean(ohc_sop,12);
-   ohc_soa=nansum(so_ar,2);ohc_soa(ohc_soa==0)=nan;
-  ohc_soa=ohc_soa -nanmean(nansum(so_ar(145:312,:),2),1);
+   ohc_soa=nanmean(so_ar,2)-nanmean(so_ar(:));
    ohc_soa=movmean(ohc_soa,12);
    %%
 %    subplot(2,2,1)
@@ -99,8 +92,7 @@ end
 %    xlabel('Years');
 %    ylabel('OHC Change')
    %%
-   %绘制四大洋盆
-   %大西洋
+
    figure(1)
    clf;
    plot(time,ohc_att,time,ohc_atp,time,ohc_ata,'linewidth',2); 
@@ -108,7 +100,7 @@ end
    title('Atlantic Ocean'); xlabel('Year'); ylabel('OHC Anomaly (J)');
    set(gca,'fontsize',14,'xtick',727747:1826:737791,'tickdir','out','linewidth',1)
    datetick;box on;
-   %印度洋
+
     figure(2)
    clf;hold on;box on
    plot(time,ohc_int,time,ohc_inp,time,ohc_ina,'linewidth',2);
@@ -116,7 +108,7 @@ end
     title('Indian Ocean');xlabel('Year');ylabel('OHC Anomaly (J)')
    set(gca,'fontsize',14,'xtick',727747:1826:737791,'tickdir','out','linewidth',1)
    datetick
-   %太平洋
+
    figure(3)
    clf;hold on;box on
    plot(time,ohc_pat,time,ohc_pap,time,ohc_paa,'linewidth',2);
@@ -124,7 +116,7 @@ end
     title('Pacific Ocean');xlabel('Year');ylabel('OHC Anomaly (J)')
  set(gca,'fontsize',14,'xtick',727747:1826:737791,'tickdir','out','linewidth',1)
    datetick
-   %南大洋
+
     figure(4)
     clf;hold on;box on
    plot(time,ohc_sot,time,ohc_sop,time,ohc_soa,'linewidth',2);

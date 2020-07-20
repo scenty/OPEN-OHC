@@ -21,19 +21,23 @@ end
 net.layers{1:hiddenlayernumber-1}.size=hiddenLayerSize;
 net.layers{hiddenlayernumber}.size=1;
 
-net.layers{1:hiddenlayernumber-1}.transferFcn='tansig'; %tansig
-%net.layers{2:hiddenlayernumber-1}.transferFcn='poslin'; %tansig
-if hiddenlayernumber>2
-net.layers{hiddenlayernumber-2:hiddenlayernumber-1}.transferFcn='tansig'; %tansig
-end
+% net.layers{1:hiddenlayernumber-1}.transferFcn='tansig'; %tansig
+net.layers{1}.transferFcn='tansig'; %tansig
+net.layers{2}.transferFcn='tansig'; %tansig
+net.layers{3}.transferFcn='tansig'; %tansig
+% net.layers{2}.transferFcn='poslin'; %tansig
+%  net.layers{3}.transferFcn='poslin'; %tansig
+% if hiddenlayernumber>2
+%  net.layers{hiddenlayernumber-2:hiddenlayernumber-1}.transferFcn='tansig'; %tansig
+% end
 %net.layers{hiddenlayernumber-2:hiddenlayernumber-1}.transferFcn='tansig'; %tansig
 net.layers{hiddenlayernumber}.transferFcn='purelin';
 %net.divideFcn = 'divideind'
 %net.divideParam.trainInd = 1:35;
 
-net.divideParam.trainRatio = 80/100;
+net.divideParam.trainRatio = 60/100;
 net.divideParam.valRatio = 20/100;
-net.divideParam.testRatio = 0/100;
+net.divideParam.testRatio = 20/100;
 
 
 net.trainParam.showWindow=0;
@@ -47,4 +51,4 @@ net.performParam.regularization=0;
 yhat = net(input);
 %e = gsubtract(t,yhat);
 performance = perform(net,t,yhat);
-%end
+end
