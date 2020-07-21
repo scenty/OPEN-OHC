@@ -40,10 +40,13 @@ for start_year=2005:2010
     la=zscore(la);%lat
     %%
     xx=[sh st sw t lo la];
-    ohc_xx=hc;
+    ohc_xx = hc; %1. non standarization
+    ohc_xx=zscore(hc); %2. global standarization
+    ohc_xx=hc; % 3. local standarization
     %%
     %Model training
-    [net,tr]=drs_run_loop(xx,ohc_xx,3,3)
+    [net,tr]=drs_run_loop(xx,ohc_xx,3,3);
+    %[net,tr]=drs_run(xx,ohc_xx); %
     path_in_save ='Data\'; 
    save([path_in_save,'model',yyyy],'net','sh_mean','sh_std','st_mean','st_std','sw_std','sw_std');
 end

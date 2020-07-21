@@ -9,7 +9,7 @@
 function [net,tr]=drs_run_loop(X,Y,hiddenlayernumber,hiddenLayerSize)
 input = X';
 t = Y';
-trainFcn = 'trainlm';  % train lm, br
+trainFcn = 'trainbr';  % train lm, br
 net = fitnet(hiddenLayerSize,trainFcn);
 net.numLayers = hiddenlayernumber;
 net.biasConnect=ones(hiddenlayernumber,1);
@@ -36,7 +36,7 @@ net.layers{hiddenlayernumber}.transferFcn='purelin';
 %net.divideParam.trainInd = 1:35;
 
 net.divideParam.trainRatio = 60/100;
-net.divideParam.valRatio = 20/100;
+net.divideParam.valRatio = 0/100;
 net.divideParam.testRatio = 20/100;
 
 
