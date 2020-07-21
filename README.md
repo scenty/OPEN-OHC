@@ -29,7 +29,7 @@ With a neural network method, the OPEN estimates OHC anomalies over four differe
 - Data: Argo data that structured
 - Visualization
 
-# Acknowledge
+# Acknowledgement
 
 Major contributers of this study are:
 
