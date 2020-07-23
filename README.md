@@ -38,7 +38,7 @@ Mr Haojie Zhang, Gratudate student in Fuzhou University (https://github.com/fzu-
 
 Dr Hua Su, Fuzhou University (suhua@fzu.edu.cn)
 
-Dr Xiao-Hai Yan, University of Delaware (xiaohai@udel.edu)
+Dr Xiao-Hai Yan, University of Delaware (xiaohai@udel.edu, [website](https://www.udel.edu/academics/colleges/ceoe/departments/smsp/faculty/xiao-hai-yan/))
 
 Ms Tian Qin, Gratudate student in Fuzhou University
 
