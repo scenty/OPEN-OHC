@@ -9,7 +9,7 @@ With a neural network method, the OPEN estimates OHC anomalies over four differe
 
 ![Graphic Abstract](https://www.mdpi.com/remotesensing/remotesensing-12-02294/article_deploy/html/images/remotesensing-12-02294-ag-550.jpg)
 
-![OPEN-OHC300](https://wx1.sinaimg.cn/large/653aa167gy1gji9u04eq0g211l0nm4rd.gif)
+![OPEN-OHC300](https://github.com/scenty/OPEN-OHC/blob/master/OPEN-OHC300b.gif)
 
 # Data Links
 - Two links to our data are provided:
