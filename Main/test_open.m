@@ -39,15 +39,15 @@ for iy=1993:2018;
         t=cos(t/365*2*pi);
         lo=zscore(cosd(lo));
         la=zscore(la);
-        t=[sh st sw t lo la];
+        xx=[sh st sw t lo la];
         ohc_t=hc;
-        ohc_std=std(ohc_t)
-        y_predict=net(t');
+        iap_std=std(ohc_t)
+        y_predict=net(xx');
         figure, plotregression(ohc_t',y_predict)
         [fitresult, gof] = createFit(ohc_t, y_predict);
         r2=gof.rsquare
         rmse=gof.rmse
-        rrmse=rmse/ohc_std
+        rrmse=rmse/iap_std
         open=y_predict;iap=ohc_t;
         path_in_save =['Data\']; 
         save([path_in_save,'open_',yyyy,mm],'open','var_lat','var_lon','iap');
