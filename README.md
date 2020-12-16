@@ -17,8 +17,9 @@ With a neural network method, the OPEN estimates OHC anomalies over four differe
 
 [Google Drive](https://drive.google.com/drive/folders/13XYRdyDznaGgKfPR9-qixmevoecEA5l7?usp=sharing) | 
 [Baidu  Cloud](https://pan.baidu.com/s/1JeaByifJi_939TFOISDovQ) with extraction code o4qy |
+Global OHC in .txt format (see above OPENv1.1.1.txt)
 
-- If **either data downloaded**, please let me know by email. These help in scientific communication and improvement of our data.
+- If **any data downloaded**, please let me know by email. These help in scientific communication and improvement of our data.
 
 
 # Directory Organization
