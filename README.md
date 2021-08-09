@@ -1,3 +1,10 @@
+# :boom::boom: New Citation!! :boom::boom:
+
+Our OPEN dataset was cited by IPCC's Sixth Accessment Report (AR6), among the direct estimations of global OHC!!
+Check it out in P502 and P627 of the [full report](https://www.ipcc.ch/report/ar6/wg1/#FullReport)!!
+
+Cheers!!
+
 # :ocean::ocean: OPEN-OHC :satellite::satellite:
 Ocean Projection and Extension neural Network (OPEN) by Dr. Wenfang Lu, Fuzhou University (:e-mail:luwf@fzu.edu.cn), and colleagues. Please feel free to contact :smirk:!
 
