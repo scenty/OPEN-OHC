@@ -1,7 +1,7 @@
 close all;clear all;
 idepth=300;
 cp=3850;rho=1025;
-fdir='G:\EN4\'; % this is EN4 directory
+fdir='D:\02-Data\EN4\'; % this is EN4 directory
 files=dir([fdir,'EN*.nc']);
 fname=[fdir,files(1).name] ;
 
@@ -34,13 +34,19 @@ for ii=1:length(files)
     time(ii)=datenum(yyyy,mm,1);
 end
 %calculate and save area matrix
-v1=load('OHC300.mat','lon','lat');
+v1=load('D:\04-工作\学生\20测绘-黄磊\shuju\model-data\ORAS5\ORAS5OHC300.mat','lon','lat');
+[xx,yy]=meshgrid(v1.lon,v1.lat);
 Rearth=6371;
-xx=v1.lon;yy=v1.lat;
+
 dy=distance(yy(1:end-1,:),xx(1:end-1,:),yy(2:end,:),xx(2:end,:));dy=dy/180*pi*Rearth*1000;
 dx=distance(yy(:,1:end-1),xx(:,1:end-1),yy(:,2:end),xx(:,2:end));dx=dx/180*pi*Rearth*1000;
 dx(:,end+1)=dx(:,end);dy(end+1,:)=dy(end,:);
 area = dx.*dy;
+area=permute(repmat(area,[1 1 size(ohc_all,1)]),[3 1 2]);
+tmp=nansum(reshape(ohc_all.*area,[size(ohc_all,1), size(ohc_all,2)*size(ohc_all,3)]),2);
+plot(time,movmean(tmp-nanmean(tmp),12))
+eval(['ohcEN4',num2str(idepth),'=tmp;'])
+save EN4GOHC ohcEN4* -append
 %%%%
 
 output_name=['EN4OHC',num2str(idepth),'.mat']
@@ -48,7 +54,25 @@ ohc_name=['ohc',num2str(idepth)]
 eval([ohc_name,'=ohc_all;'])
 eval(['save(output_name,''lon'',''area'',''lat'',''time'',''',ohc_name,''')'])
 
+
+
 return
+
+idepth=1500
+load(['EN4OHC',num2str(idepth),'.mat'])
+ohc_all=ohc1500;
+v1=load('D:\04-工作\学生\20测绘-黄磊\shuju\model-data\ORAS5\ORAS5OHC300.mat','lon','lat');
+[xx,yy]=meshgrid(v1.lon,v1.lat);xx=xx';yy=yy';
+Rearth=6371;
+dy=distance(yy(1:end-1,:),xx(1:end-1,:),yy(2:end,:),xx(2:end,:));dy=dy/180*pi*Rearth*1000;
+dx=distance(yy(:,1:end-1),xx(:,1:end-1),yy(:,2:end),xx(:,2:end));dx=dx/180*pi*Rearth*1000;
+dx(:,end+1)=dx(:,end);dy(end+1,:)=dy(end,:);
+area = dx.*dy;
+area=permute(repmat(area,[1 1 size(ohc_all,1)]),[3 1 2]);
+tmp=nansum(reshape(ohc_all.*area,[size(ohc_all,1), size(ohc_all,2)*size(ohc_all,3)]),2);
+plot(time,movmean(tmp-nanmean(tmp),12))
+eval(['ohcEN4',num2str(idepth),'=tmp;'])
+save EN4GOHC ohcEN4* -append
 
 
 area=permute(repmat(area,[1 1 size(ohc2000,1)]),[3 1 2]);

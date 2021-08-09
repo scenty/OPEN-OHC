@@ -35,7 +35,7 @@ net.layers{hiddenlayernumber}.transferFcn='purelin';
 %net.divideFcn = 'divideind'
 %net.divideParam.trainInd = 1:35;
 
-net.divideParam.trainRatio = 60/100;
+net.divideParam.trainRatio = 80/100;
 net.divideParam.valRatio = 0/100;
 net.divideParam.testRatio = 20/100;
 
@@ -47,7 +47,7 @@ net.trainParam.showWindow=1;
 %net.performFcn='mse';
 net.performParam.regularization=0;
 %close all;view(net)
-[net,tr] = train(net,input,t,'useParallel','no','showResources','no');
+[net,tr] = train(net,input,t,'useGPU','no','useParallel','no','showResources','no');
 yhat = net(input);
 %e = gsubtract(t,yhat);
 performance = perform(net,t,yhat);
