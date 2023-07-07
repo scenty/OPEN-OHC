@@ -6,7 +6,7 @@ Check it out in P502 and P627 of the [full report](https://www.ipcc.ch/report/ar
 Cheers!!
 
 # :ocean::ocean: OPEN-OHC :satellite::satellite:
-Ocean Projection and Extension neural Network (OPEN) by Dr. Wenfang Lu, Fuzhou University (:e-mail:luwf@fzu.edu.cn), and colleagues. Please feel free to contact :smirk:!
+Ocean Projection and Extension neural Network (OPEN) by Dr. Wenfang Lu, Sun Yat-sen University (:e-mail:luwf6@sysu.edu.cn), and colleagues. Please feel free to contact :smirk:!
 
 # Introduction
 The code is for pre-processing, training, testing, and visualization of OPEN-OHC dataset.
